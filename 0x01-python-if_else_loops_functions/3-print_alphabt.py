@@ -3,3 +3,4 @@ for a in range(97, 123):
     if a == 101 or a == 13:
         continue
     print('{:c}'.format(a), end='')
+print("")
