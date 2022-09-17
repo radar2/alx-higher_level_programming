@@ -8,7 +8,7 @@ Created on Sat Sep 17 15:53:15 2022
 
 class Square:
     """ 
-    A square that can 
+    Square is a class that define a square
     """
 
     pass
