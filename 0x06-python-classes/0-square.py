@@ -10,5 +10,6 @@ class Square:
     """ 
     A square that can 
     """
+
     pass
 
