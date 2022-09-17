@@ -1,4 +1,9 @@
 #!/usr/bin/python3
-class Square:
-    """ A square that can """
+###################
+## Square class
+###################
+class Square(object):
+    """ 
+    A square that can 
+    """
     pass
