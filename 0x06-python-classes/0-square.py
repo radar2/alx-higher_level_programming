@@ -1,9 +1,12 @@
 #!/usr/bin/python3
-###################
-## Square class
-###################
+"""
+Created on Sat Sep 17 15:53:15 2022
+
+@author: David Grean
+"""
 class Square(object):
     """ 
     A square that can 
     """
     pass
+
