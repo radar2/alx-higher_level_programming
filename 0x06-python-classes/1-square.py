@@ -8,7 +8,7 @@ Created on Sat Sep 17 15:53:15 2022
 
 class Square(object):
     """
-    Sqaure class that define a square
+    Sqaure class that define a square.
     """
     def __init__(self, size):
         """ Square init method.
