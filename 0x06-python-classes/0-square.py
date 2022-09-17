@@ -11,5 +11,3 @@ class Square:
     Square is a class that define a square
     """
 
-    pass
-
