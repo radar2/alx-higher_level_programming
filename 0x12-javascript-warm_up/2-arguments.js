@@ -1,5 +1,5 @@
 #!/usr/bin/node
-// JS
+// JS script
 
 if (process.argv.length === 2) {
   console.log('No argument');
