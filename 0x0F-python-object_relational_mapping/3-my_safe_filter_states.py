@@ -1,32 +1,37 @@
 #!/usr/bin/python3
-""""that takes in an argument and displays all values in the states
- table of hbtn_0e_0_usa where name matches"""
-
+"""Display name argument of states table"""
 import MySQLdb
 import sys
 
-def filter_state_safe():
-    """ that lists all states with a name starting with N
+
+def filter_names_safe():
+    """Takes arguments argv to list from database
+    Only lists with states that matches name argument
     Arguments:
-        argv[0]: User name
-        argv[2]: password
-        argv[3]: Db name
-        argv[4]: name searched
+        argv[1]: mysql username
+        argv[2]: mysql password
+        argv[3]: database name
+        argv[4]: state name
     """
-    db = MySQLdb.connect(host='localhost',
-                         port=3306,
-                         user=sys.argv[1],
-                         passwd= sys.argv[2],
-                         db=sys.argv[3])
-    cursor = db.cursor()
-    cursor.execute("select * from states where BINARY name='{:s}' order by id asc".format(sys.argv[4]))
+    if len(sys.argv) == 5:
+        db = MySQLdb.connect(host="localhost",
+                             port=3306,
+                             user=sys.argv[1],
+                             passwd=sys.argv[2],
+                             db=sys.argv[3])
 
-    rows = cursor.fetchall()
+        cur = db.cursor()
 
-    for i in rows:
-        print(i)
-    cursor.close()
-    db.close()
+        cur.execute("SELECT * FROM states WHERE BINARY name='{:s}'\
+                    ORDER BY id ASC".format(sys.argv[4]))
+        rows = cur.fetchall()
+        for i in rows:
+            print(i)
 
-if __name__ == '__main__':
-    filter_state_safe()
+        cur.close()
+        db.close()
+    else:
+        return
+
+if __name__ == "__main__":
+    filter_names_safe()
