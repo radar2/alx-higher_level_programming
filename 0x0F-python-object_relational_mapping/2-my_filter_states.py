@@ -3,6 +3,7 @@
 import MySQLdb
 import sys
 
+
 def filter_names():
     """Takes arguments argv to list from database
     Only lists with states that matches name argument
@@ -28,6 +29,7 @@ def filter_names():
 
     cur.close()
     db.close()
+
 
 if __name__ == "__main__":
     filter_names()

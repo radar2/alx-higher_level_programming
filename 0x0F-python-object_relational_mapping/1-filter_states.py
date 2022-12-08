@@ -3,6 +3,7 @@
 import MySQLdb
 import sys
 
+
 def get_states_n():
     """Takes arguments argv to list from database
     Only lists with states that start with N
@@ -26,6 +27,7 @@ def get_states_n():
 
     cur.close()
     db.close()
+
 
 if __name__ == "__main__":
     get_states_n()
