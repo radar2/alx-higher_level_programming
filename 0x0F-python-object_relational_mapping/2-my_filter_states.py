@@ -29,6 +29,5 @@ def filter_names():
     cur.close()
     db.close()
 
-
 if __name__ == "__main__":
     filter_names()
