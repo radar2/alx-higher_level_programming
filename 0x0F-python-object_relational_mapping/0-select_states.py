@@ -3,7 +3,6 @@
 import MySQLdb
 import sys
 
-
 def get_states():
     """Takes arguments argv to list from database
     Arguments:

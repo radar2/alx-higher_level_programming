@@ -3,7 +3,6 @@
 import MySQLdb
 import sys
 
-
 def filter_names():
     """Takes arguments argv to list from database
     Only lists with states that matches name argument
