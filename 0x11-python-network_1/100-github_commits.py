@@ -7,6 +7,9 @@ from sys import argv
 
 
 def list_commit():
+    """
+    commits
+    """
     name = argv[2]
     repo = argv[1]
     params = {'per_page': 10}
@@ -20,4 +23,3 @@ def list_commit():
 
 if __name__ == '__main__':
     list_commit()
-
