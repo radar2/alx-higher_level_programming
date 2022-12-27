@@ -5,7 +5,9 @@ import sys
 
 
 def fetcher():
-    """fetcher"""
+    """
+    fetcher
+    """
     with urllib.request.urlopen(sys.argv[1]) as response:
         header = response.info()
         print(header["X-Request-Id"])
