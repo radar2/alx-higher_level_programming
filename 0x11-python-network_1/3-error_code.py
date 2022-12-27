@@ -6,7 +6,9 @@ import sys
 
 
 def sender():
-    """sender"""
+    """
+    sender
+    """
     try:
         with urllib.request.urlopen(sys.argv[1]) as response:
             html = response.read()

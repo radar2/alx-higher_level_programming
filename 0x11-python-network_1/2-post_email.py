@@ -6,7 +6,9 @@ import sys
 
 
 def sender():
-    """sender"""
+    """
+    sender
+    """
     v = {"email": sys.argv[2]}
     data = urllib.parse.urlencode(v)
     data = data.encode("ascii")

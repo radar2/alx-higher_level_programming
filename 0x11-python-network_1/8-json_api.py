@@ -5,7 +5,9 @@ import sys
 
 
 def searchapi():
-    """status"""
+    """
+    status
+    """
     if len(sys.argv) == 1:
         q = ""
     else:

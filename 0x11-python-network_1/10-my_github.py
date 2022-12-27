@@ -6,7 +6,9 @@ import sys
 
 
 def searchapi():
-    """status"""
+    """
+    status
+    """
     user = str(sys.argv[1])
     pw = str(sys.argv[2])
     result = requests.get("https://api.github.com/user",

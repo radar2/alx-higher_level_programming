@@ -5,7 +5,9 @@ import sys
 
 
 def errorcode():
-    """status"""
+    """
+    status
+    """
     result = requests.get(sys.argv[1])
     try:
         if result.status_code > 400:
