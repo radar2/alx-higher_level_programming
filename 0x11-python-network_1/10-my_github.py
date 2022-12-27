@@ -14,11 +14,8 @@ def searchapi():
     result = requests.get("https://api.github.com/user",
                           auth=(HTTPBasicAuth(user, pw)))
 
-    try:
-        data = result.json()
-        print(data["id"])
-    except:
-        print("None")
+    data = result.json()
+    print(data["id"])
 
 
 if __name__ == "__main__":
