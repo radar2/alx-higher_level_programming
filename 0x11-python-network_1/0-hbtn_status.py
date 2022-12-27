@@ -4,7 +4,9 @@ import urllib.request
 
 
 def fetch_status():
-    """Fetches status"""
+    """
+    Fetches status
+    """
     url = "https://alx-intranet.hbtn.io/status"
     with urllib.request.urlopen(url) as response:
         html = response.read()
@@ -16,4 +18,3 @@ def fetch_status():
 
 if __name__ == "__main__":
     fetch_status()
-    print("")
