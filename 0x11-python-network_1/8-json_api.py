@@ -21,7 +21,7 @@ def searchapi():
             print("[{}] {}".format(data["id"], data["name"]))
         else:
             print("No result")
-    except KeyError as e:
+    except:
         print("Not a valid JSON")
 
 
