@@ -10,10 +10,6 @@ def get_todo():
     List to do list
     """
     id = int(sys.argv[1])
-
-    #req = urllib.request.Request("https://jsonplaceholder.typicode.com/todos/{}".format(id))
-
-
     try:
         user_result = requests.get("https://jsonplaceholder.typicode.com/users/{}".format(id))
         user_data = user_result.json()
