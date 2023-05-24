@@ -1,9 +1,9 @@
 #!/usr/bin/node
-// JS Script
+// Script that reads and prints the content of a file.
 const fs = require('fs');
-fs.readFile(process.argv[2], function (err, contents) {
+fs.readFile(process.argv[2], function (err, data) {
   if (!err) {
-    console.log(contents.toString().trim());
+    console.log(data.toString().trim());
   } else {
     console.log(err);
   }
